@@ -16,5 +16,5 @@ public interface ShoppingDAO {
     void deleteItem(ShoppingModel...shoppingModel);
 
     @Query("SELECT * from shoppinglist_table")
-    List<ShoppingModel> getAllItems();
+    LiveData<List<ShoppingModel>> getAllItems();
 }
