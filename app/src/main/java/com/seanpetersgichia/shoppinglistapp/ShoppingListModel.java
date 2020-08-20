@@ -4,7 +4,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "shoppinglist_table")
-public class ShoppingModel {
+public class ShoppingListModel {
 
     @PrimaryKey
     public int id;
