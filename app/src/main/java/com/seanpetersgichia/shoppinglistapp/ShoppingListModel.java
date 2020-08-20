@@ -13,5 +13,4 @@ public class ShoppingListModel {
 
     public int groceryQuantity;
 
-    public int groceryTotalPrice;
 }
