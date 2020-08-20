@@ -13,8 +13,11 @@ public interface ShoppingDAO {
     void insertItem(ShoppingModel... shoppingModels);
 
     @Query("DELETE FROM shoppinglist_table")
-    void deleteItem(ShoppingModel...shoppingModel);
+    void deleteItem(ShoppingModel... shoppingModel);
 
     @Query("SELECT * from shoppinglist_table")
     LiveData<List<ShoppingModel>> getAllItems();
+
+    @Query("SELECT COUNT(*) FROM shoppinglist_table")
+    LiveData<List<ShoppingModel>> countAllItems();
 }
